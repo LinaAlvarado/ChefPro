@@ -1,3 +1,67 @@
+/* 
+1.posicionamiento
+2.modelo de caja
+3.tipografia
+4.visuales
+5.otros
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+/* colores */
+--PrimaryColor:#161818;
+--PrimaryColor-opacity:rgba(22, 24, 24, 0.5);
+--PrimaryColor-darker:#0E0E0E;
+--accentColor:#FFB061;
+--accentColor-hover:#F3983C;
+--secundaryColor:#FFFFFF;
+}
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html{
+font-size: 62.5%;
+font-family: 'Quicksand', sans-serif;
+}
+
+h1,h2,h3,h4{
+font-family: 'Nanum Myeongjo', serif;
+color: var(--PrimaryColor);
+}
+
+h1{
+font-size: 6rem;
+}
+
+h2{
+font-size: 4rem;
+}
+
+p{
+font-size: 1.6rem;
+font-weight: 500;
+color: var(--PrimaryColor);
+}
+
+header{
+background-color: var(--PrimaryColor);
+width:100%;
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+padding: 1rem 1.6rem;
+}
+
+.logo{
+
+}
+
 footer{
-    background-color:#161818 ;
+    background-color:var(--Darkgray);
 }
