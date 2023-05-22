@@ -13,7 +13,7 @@
   /* colores */
   --PrimaryColor: #161818;
   --PrimaryColor-opacity: rgba(22, 24, 24, 0.368);
-  --PrimaryColor-opacity-high:rgba(22, 24, 24, 0.718);
+  --PrimaryColor-opacity-high:rgba(22, 24, 24, 0.281);
   --PrimaryColor-darker: #0e0e0e;
   --accentColor: #ffb061;
   --accentColor-hover: #f3983c;
@@ -58,6 +58,16 @@ p {
 a{
   font-size: 1.6rem;
   text-decoration: none;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--secundaryColor);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+  background-color: var(--PrimaryColor);
 }
 
 /**** header ****/
@@ -219,8 +229,8 @@ transition:  3s;
   flex-flow: column;
   align-items: center;
   padding: 4rem;
-  height: 50rem;
-  justify-content: space-between;
+  height: 60rem;
+  justify-content: center;
 }
 
 .classes-container__text{
@@ -229,7 +239,8 @@ flex-direction: column;
 align-items: center;
 height: 13rem;
 width:  60rem;
-justify-content: space-between;
+justify-content: space-around;
+margin-bottom: 2rem;
 }
 
 .classes-container__text > p{
@@ -239,6 +250,20 @@ justify-content: space-between;
 .classes-container__imgs{
 
 }
+
+/**** action section ****/
+.second-action__section{
+width: 100%;
+height: 40vw;
+background-image: url('img/grace-o-driscoll-_ODVlLRQoTk-unsplash\ 1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
+
+
 
 /**** Footer ****/
 footer {
