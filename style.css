@@ -1,11 +1,3 @@
-/* 
-1.posicionamiento
-2.modelo de caja
-3.tipografia
-4.visuales
-5.otros
-*/
-
 /**** CLases generales ****/
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
@@ -13,7 +5,7 @@
   /* colores */
   --PrimaryColor: #161818;
   --PrimaryColor-opacity: rgba(22, 24, 24, 0.368);
-  --PrimaryColor-opacity-high:rgba(22, 24, 24, 0.281);
+  --PrimaryColor-opacity-high: rgba(22, 24, 24, 0.281);
   --PrimaryColor-darker: #0e0e0e;
   --accentColor: #ffb061;
   --accentColor-hover: #f3983c;
@@ -42,7 +34,6 @@ h4 {
 
 h1 {
   font-size: 6rem;
-
 }
 
 h2 {
@@ -55,17 +46,18 @@ p {
   color: var(--PrimaryColor);
 }
 
-a{
+a {
   font-size: 1.6rem;
   text-decoration: none;
 }
 
-::-webkit-scrollbar-thumb{
+/* Style scroll */
+::-webkit-scrollbar-thumb {
   background-color: var(--secundaryColor);
   border-radius: 1rem;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.5rem;
   background-color: var(--PrimaryColor);
 }
@@ -80,8 +72,8 @@ header {
   z-index: 3;
 }
 
-.logo{
-height: 4rem;
+.logo {
+  height: 4rem;
 }
 
 .main-nav {
@@ -94,7 +86,6 @@ height: 4rem;
 .main-nav ul {
   display: flex;
   align-items: center;
-
 }
 
 .main-nav__item {
@@ -104,7 +95,6 @@ height: 4rem;
 
 .main-nav__item a {
   color: var(--secundaryColor);
-
 }
 
 .main-nav__item.secundary-button > a:hover {
@@ -125,7 +115,7 @@ height: 4rem;
 .main-content__section {
   position: relative;
   height: 100vh;
-  z-index:1;
+  z-index: 1;
   background-color: var(--PrimaryColor);
 }
 
@@ -144,29 +134,29 @@ video {
 }
 
 .main-text__container {
-width: 100%;
-height: 100vh;
-display: flex;
-flex-direction:column;
-align-items: center;
-justify-content: center;
-z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 }
 
-.main-text__container > h1{
- color: var(--secundaryColor);
- margin: 2rem ;
+.main-text__container > h1 {
+  color: var(--secundaryColor);
+  margin: 2rem;
 }
 
-.text-p__white{
+.text-p__white {
   color: var(--secundaryColor);
   text-align: center;
-  margin-bottom:2.5rem;
+  margin-bottom: 2.5rem;
   width: 55rem;
   white-space: normal;
 }
 
-.primary-button{
+.primary-button {
   background-color: var(--accentColor);
   color: var(--secundaryColor);
   width: 22rem;
@@ -176,20 +166,20 @@ z-index: 2;
   line-height: 4.5rem;
 }
 
-.primary-button:hover{
+.primary-button:hover {
   background-color: var(--accentColor-hover);
 }
 
 /**** grid images section ****/
 /* flex-box */
-.grid-fotos__section{
+.grid-fotos__section {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.grid-text__section{
+.grid-text__section {
   margin: 0 3rem;
   height: 13rem;
   width: 60rem;
@@ -198,32 +188,31 @@ z-index: 2;
   justify-content: space-between;
 }
 
-.grid-images__section{
+.grid-images__section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows:300px;
+  grid-auto-rows: 300px;
   gap: 1.8rem;
 }
 
-.container-img{
-overflow: hidden;
+.container-img {
+  overflow: hidden;
 }
 
-.container-img > img{
+.container-img > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 3s;
 }
 
-.container-img > img:hover{
-transform: scale(1.2);
-transition:  3s;
+.container-img > img:hover {
+  transform: scale(1.2);
+  transition: 3s;
 }
 
-
 /**** classes section ****/
-.classes-content__section{
+.classes-content__section {
   background-color: var(--accentColor);
   display: flex;
   flex-flow: column;
@@ -233,34 +222,30 @@ transition:  3s;
   justify-content: center;
 }
 
-.classes-container__text{
-display: flex;
-flex-direction: column;
-align-items: center;
-height: 13rem;
-width:  60rem;
-justify-content: space-around;
-margin-bottom: 2rem;
+.classes-container__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 13rem;
+  width: 60rem;
+  justify-content: space-around;
+  margin-bottom: 2rem;
 }
 
-.classes-container__text > p{
+.classes-container__text > p {
   text-align: center;
 }
 
-.classes-container__imgs{
-
-}
-
 /**** action section ****/
-.second-action__section{
-width: 100%;
-height: 40vw;
-background-image: url('img/grace-o-driscoll-_ODVlLRQoTk-unsplash\ 1.jpg');
-background-repeat: no-repeat;
-background-size: cover;
+.second-action__section {
+  width: 100%;
+  height: 40vw;
+  background-image: url("img/grace-o-driscoll-_ODVlLRQoTk-unsplash\ 1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.text-secod-action__container{
+.text-secod-action__container {
   width: 100%;
   height: 85%;
   display: flex;
@@ -268,10 +253,10 @@ background-size: cover;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  position:absolute;
+  position: absolute;
 }
 
-.overlay{
+.overlay {
   width: 100%;
   height: 100%;
   background-color: var(--PrimaryColor);
@@ -279,13 +264,13 @@ background-size: cover;
   z-index: -1;
 }
 
-.title-action{
-color: var(--secundaryColor);
-font-weight: 700;
-margin-bottom: 1rem;
+.title-action {
+  color: var(--secundaryColor);
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.title-action ~ p{
+.title-action ~ p {
   color: var(--secundaryColor);
   width: 55rem;
   text-align: center;
@@ -293,7 +278,7 @@ margin-bottom: 1rem;
 }
 
 /**** Footer ****/
-footer{
+footer {
   height: 15rem;
   background-color: var(--PrimaryColor);
   display: flex;
@@ -301,30 +286,30 @@ footer{
   justify-content: space-between;
 }
 
-.socialmedia-container{
-display: flex;
-flex-direction: column;
-justify-content:center;
-align-items: center;
-margin-top: 2rem;
+.socialmedia-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-.social-buttons{
-display: flex;
-width: 7rem;
-justify-content: space-around;
+.social-buttons {
+  display: flex;
+  width: 7rem;
+  justify-content: space-around;
 }
 
-.social-buttons a > img:hover{
-opacity: 0.5;
-transition: 0.2s;
+.social-buttons a > img:hover {
+  opacity: 0.5;
+  transition: 0.2s;
 }
 
-.banner-footer{
+.banner-footer {
   background-color: var(--PrimaryColor-darker);
 }
 
-.banner-footer > p{
+.banner-footer > p {
   font-size: 1.4rem;
   padding: 1rem;
   text-align: center;
